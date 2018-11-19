@@ -23,7 +23,7 @@ print("Reading frame {} {} ".format(count, success))
 while success:
 
   # write the current frame out as a jpeg image
-  cv2.imwrite("{}/frame_{:04d}.jpg".format(outputDir, count), image)   
+  cv2.imwrite("{}/frame_{:04d}.jpg".format(outputDir, count), image)
   success,image = vidcap.read()
   print('Reading frame {}'.format(count))
   count += 1
